@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Login</string>
+
+    <string name="title">Вход в VK MUSIC</string>
+    <string name="placeholder_login">Почта или номер телефона</string>
+    <string name="placeholder_password">Пароль</string>
+    <string name="enter">Войти</string>
 </resources>

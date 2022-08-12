@@ -39,6 +39,7 @@ object AndroidX {
         const val tooling = "androidx.compose.ui:ui-tooling:$version"
         const val toolingPreview = "androidx.compose.ui:ui-tooling-preview:$version"
         const val test = "androidx.compose.ui:ui-test:$version"
+        const val ui = "androidx.compose.ui:ui:$version"
         const val uiTest = "androidx.compose.ui:ui-test-junit4:$version"
         const val uiText = "androidx.compose.ui:ui-text-google-fonts:$version"
         const val uiTestManifest = "androidx.compose.ui:ui-test-manifest:$version"
@@ -56,9 +57,7 @@ object AndroidX {
     object Navigation {
         private const val version = "2.5.1"
 
-        const val uiKtx = "androidx.navigation:navigation-ui-ktx:$version"
         const val compose = "androidx.navigation:navigation-compose:$version"
-        const val fragment = "androidx.navigation:navigation-fragment-ktx:$version"
     }
 
     object Lifecycle {
@@ -84,4 +83,12 @@ object Kotlin {
         const val android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version"
         const val test = "org.jetbrains.kotlinx:kotlinx-coroutines-test:$version"
     }
+}
+
+object Vk {
+
+    private const val vk = "3.5.2"
+
+    const val core = "com.vk:android-sdk-core:$vk"
+    const val api = "com.vk:android-sdk-api:$vk"
 }

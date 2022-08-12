@@ -15,6 +15,14 @@ android {
         minSdk = DefaultConfig.minSdk
     }
 
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = AndroidX.Compose.kotlinCompilerExtensionVersion
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -22,12 +30,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures {
-        viewBinding = true
-    }
 }
 
 dependencies {
+
+    implementation(project(":colors"))
 
     implementation(Kotlin.reflect)
     implementation(Kotlin.Coroutines.core)
@@ -38,8 +45,6 @@ dependencies {
     implementation(AndroidX.Activity.activityCompose)
     implementation(AndroidX.Lifecycle.livedata)
     implementation(AndroidX.Lifecycle.viewModelCompose)
-    implementation(AndroidX.Navigation.fragment)
-    implementation(AndroidX.Navigation.uiKtx)
     implementation(AndroidX.Navigation.compose)
     implementation(AndroidX.Compose.Material3.material3)
 
@@ -47,10 +52,14 @@ dependencies {
     implementation(AndroidX.Compose.Material3.material3)
     implementation(AndroidX.Compose.materialIconsExtended)
     implementation(AndroidX.Compose.toolingPreview)
+    implementation(AndroidX.Compose.ui)
     implementation(AndroidX.Compose.uiUtil)
     implementation(AndroidX.Compose.runtime)
     implementation(AndroidX.Compose.runtimeLivedata)
     implementation(AndroidX.Compose.viewBinding)
     implementation(AndroidX.Compose.uiText)
     debugImplementation(AndroidX.Compose.tooling)
+
+    implementation(Vk.core)
+    implementation(Vk.api)
 }

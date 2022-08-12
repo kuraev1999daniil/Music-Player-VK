@@ -52,8 +52,6 @@ dependencies {
     implementation(AndroidX.appcompat)
     implementation(AndroidX.Lifecycle.livedata)
     implementation(AndroidX.Lifecycle.viewModelCompose)
-    implementation(AndroidX.Navigation.fragment)
-    implementation(AndroidX.Navigation.uiKtx)
     implementation(AndroidX.Navigation.compose)
 
     implementation(AndroidX.Compose.layout)
